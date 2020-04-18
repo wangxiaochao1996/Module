@@ -11,9 +11,9 @@ hostname = api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.
 
 [Script]
 # > NextDNS
-nextdns_linkedip.js = script-path=https://github.com/wangxiaochao1996/JS/raw/master/nextdns_linkedip.js,event-name=network-changed,type=event
+#nextdns_linkedip.js = script-path=https://github.com/wangxiaochao1996/JS/raw/master/nextdns_linkedip.js,event-name=network-changed,type=event
 # > DNSpod
-dnspod = script-path=https://github.com/langkhach270389/Scripting/raw/master/Surge/dnspod.js,type=dns
+#dnspod = script-path=https://github.com/langkhach270389/Scripting/raw/master/Surge/dnspod.js,type=dns
 # 第一弹
 Diyidan.js = type=http-response,pattern=^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne),requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/diyidan.js,script-update-interval=0
 # 大千视界
