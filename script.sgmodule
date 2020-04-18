@@ -1,0 +1,48 @@
+#!name=Script
+#!desc=JS Commonly used
+
+
+
+[MITM]
+
+hostname = api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-api.faceu.com, pay.wecut.com, api.rr.tv, app.xunjiepdf.com
+
+
+
+[Script]
+# > NextDNS
+nextdns_linkedip.js = script-path=https://github.com/wangxiaochao1996/JS/raw/master/nextdns_linkedip.js,event-name=network-changed,type=event
+# > DNSpod
+dnspod = script-path=https://github.com/langkhach270389/Scripting/raw/master/Surge/dnspod.js,type=dns
+# 第一弹
+Diyidan.js = type=http-response,pattern=^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne),requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/diyidan.js,script-update-interval=0
+# 大千视界
+dqsj.js = requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/dqsj.js,pattern=^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*),type=http-response
+# 百度网盘
+// BaiduCloud.js = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
+# 知音漫客
+Zymh.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js,pattern=^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/,type=http-response
+# vsco
+vsco.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,type=http-response
+# 水印精灵
+syjl.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/syjl.js,pattern=https:\/\/api1\.dobenge\.cn\/api\/user\/getuserinfo,type=http-response
+# wps
+Wps.js = requires-body=1,max-size=-1,script-path=https://github.com/NobyDa/Script/raw/master/Surge/JS/Wps.js,script-update-interval=0,pattern=^https?:\/\/account\.wps\.cn\/api\/users,type=http-response
+# 扫描全能王
+CamScanner.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,type=http-response
+# 用药助手
+yyzs.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/yyzs.js,pattern=^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)),type=http-response
+#墨墨背单词
+momo.js = requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/momo.js,script-update-interval=0,pattern=^https\:\/\/api\.maimemo\.com\/api\/v1/users/info,type=http-response
+#itranslate
+itranslate.js = type=http-response,requires-body=1,max-size=0,pattern=https://ssl-api.itranslateapp.com/accounts/v4/subscriptions/verify/ios,script-path=https://github.com/wangxiaochao1996/Alex0510/raw/master/Script/itranslate.js,script-update-interval=0
+#流利阅读
+llyd.js = requires-body=1,max-size=0,script-path=https://github.com/nzw9314/QuantumultX/raw/master/Script/llyd.js,script-update-interval=0,pattern=^https?:\/\/vira\.llsapp\.com\/api\/v2\/readings\/(accessible|limitation),type=http-response
+#我追电影
+wzdy.js = requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/wzdy.js,script-update-interval=0,pattern=^https?:\/\/api-gw\.zhuidianying\.com(\/user\/property\/info|\/user\/detail\/info|\/item\/search\/movie\/info),type=http-response
+#轻颜相机
+qyxj.js = type=http-response,requires-body=1,max-size=0,pattern=https://(commerce-api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info),script-path=https://github.com/wangxiaochao1996/Alex0510/raw/master/Script/qyxj.js,script-update-interval=0
+#人人视频
+rrtv.js = type=http-response,requires-body=1,max-size=0,pattern=https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail),script-path=https://github.com/wangxiaochao1996/Alex0510/raw/master/Script/rrtv.js,script-update-interval=0
+#语音翻译器
+yyfyq.js = requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/yyfyq.js,script-update-interval=0,pattern=^https\:\/\/app\.xunjiepdf\.com\/api\/v4\/memprofile,type=http-response
