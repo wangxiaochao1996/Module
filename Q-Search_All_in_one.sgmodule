@@ -75,7 +75,7 @@
 
 # 社区
 # db：豆瓣
-^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://www.douban.com/search?query=$1 302
+^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://m.douban.com/search/?query=$1 302
 
 # zh: 知乎
 ^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ https://www.zhihu.com/search?type=content&q=$1 302
@@ -90,7 +90,7 @@
 ^https:\/\/duckduckgo.com\/\?q=rd\+([^&]+).+ https://www.reddit.com/search?q=$1 302
 
 # tw (Twitter)
-^https:\/\/duckduckgo.com\/\?q=tw\+([^&]+).+ url 302 https://twitter.com/search?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=tw\+([^&]+).+ https://twitter.com/search?q=$1 302
 
 # > 购物
 # zdm: 什么值得买
