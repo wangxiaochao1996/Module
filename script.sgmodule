@@ -5,11 +5,13 @@
 
 [MITM]
 
-hostname = api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-api.faceu.com, pay.wecut.com, api.rr.tv, app.xunjiepdf.com
+hostname = api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-api.faceu.com, pay.wecut.com, api.rr.tv, app.xunjiepdf.com, api.app.z8dns.com 
 
 
 
 [Script]
+#同桌游戏（头号玩家）
+tzyxthwj.js = type=http-response,pattern=https\:\/\/api\.app\.z8dns\.com\/(normal_match\/left_count|vip\/status),requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/tzyxthwj.js,script-update-interval=0
 # 第一弹
 Diyidan.js = type=http-response,pattern=^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne),requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/diyidan.js,script-update-interval=0
 # 大千视界
