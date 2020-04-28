@@ -5,7 +5,7 @@
 
 [MITM]
 
-hostname = api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-api.faceu.com, pay.wecut.com, api.rr.tv, app.xunjiepdf.com, api.app.z8dns.com 
+hostname = %APPEND% api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-api.faceu.com, pay.wecut.com, api.rr.tv, app.xunjiepdf.com, api.app.z8dns.com 
 
 
 
