@@ -10,6 +10,12 @@ hostname = api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.
 
 
 [Script]
+
+# > NextDNS
+nextdns_linkedip.js = script-path=https://github.com/wangxiaochao1996/JS/raw/master/nextdns_linkedip.js,event-name=network-changed,type=event
+# > DNSpod
+Dnspod = type=dns,script-path=https://raw.githubusercontent.com/maicoo-l/Surge/master/Script/dnspod.js,script-update-interval=-1
+
 #同桌游戏（头号玩家）
 tzyxthwj.js = type=http-response,pattern=https\:\/\/api\.app\.z8dns\.com\/(normal_match\/left_count|vip\/status),requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/tzyxthwj.js,script-update-interval=0
 # 第一弹
