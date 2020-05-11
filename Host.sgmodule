@@ -2,7 +2,6 @@
 #!desc=本地 DNS 映射，以及广告站点重定向至 localhost 以拦截广告。
 
 [Host]
-*.nextdns.io = server:45.90.30.65
 *.google.com = script:Dnspod
 *.apple.com = script:Dnspod
 ip6-localhost = ::1
