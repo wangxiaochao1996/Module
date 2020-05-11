@@ -28,6 +28,7 @@
 
 
 # db：豆瓣搜索
+# cup: 茶杯狐搜电影
 # zh: 知乎
 # wb: 微博
 # wx: 微信
@@ -99,6 +100,9 @@
 
 # db：豆瓣
 ^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://m.douban.com/search/?query=$1 302
+
+# cup: 茶杯狐搜电影
+^https:\/\/duckduckgo.com\/\?q=cup\+([^&]+).+ https://www.cupfox.com/search?key=$1 302
 
 # zh: 知乎
 ^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ https://www.zhihu.com/search?type=content&q=$1 302
