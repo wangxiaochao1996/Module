@@ -18,7 +18,7 @@ Diyidan.js = type=http-response,pattern=^https:\/\/api\.diyidan\.net\/v0\.3\/(us
 # 大千视界
 dqsj.js = requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/dqsj.js,pattern=^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*),type=http-response
 # 百度网盘
-// BaiduCloud.js = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
+BaiduCloud.js = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
 # 知音漫客
 Zymh.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js,pattern=^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/,type=http-response
 # vsco
