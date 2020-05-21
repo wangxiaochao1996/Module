@@ -3,13 +3,10 @@
 
 [Rule]
 #绕过企业证书
-DOMAIN,ocsp.apple.com, REJECT
+DOMAIN,ocsp.apple.com,REJECT
 
 #屏蔽系统更新
-DOMAIN, mesu.apple.com, REJECT
-DOMAIN, gdmf.apple.com, REJECT
-DOMAIN, updates-http.cdn-apple.com, REJECT
+DOMAIN,mesu.apple.com,REJECT
+DOMAIN,gdmf.apple.com,REJECT
+DOMAIN,updates-http.cdn-apple.com,REJECT
 DOMAIN,xp.apple.com,REJECT
-
-#App Store下载转圈
-DOMAIN, p14-buy.itunes.apple.com, proxy
