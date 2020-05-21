@@ -1,0 +1,13 @@
+#!name=绕过证书
+#!desc=屏蔽企业证书掉签，屏蔽系统更新
+
+[Rule]
+DOMAIN,ocsp.apple.com,REJECT
+DOMAIN,gdmf.apple.com
+DOMAIN,gdmf.apple.com.akadns.net
+DOMAIN,mesu.apple.com
+DOMAIN,mesu-cdn.apple.com.akadns.net
+DOMAIN,mesu-cdn.origin-apple.com.akadns.net
+DOMAIN,mesu.g.aaplimg.com
+DOMAIN,appldnld.apple.com
+DOMAIN,appldnld.apple.com.akadns.net
