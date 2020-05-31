@@ -1,11 +1,11 @@
 #!name=TikTok
 #!desc=解除 TikTok 区域限制，抖音无国界。
-#!system=ios
+#!system=ios(升级后改版本号即可）
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) US 307
-(?<=&app_version=)16..(?=.?.?&) 1 307
-(?<=\?version_code=)16..(?=.?.?&) 1 307
+(?<=&app_version=)16.2.0(?=.?.?&) 1 307
+(?<=\?version_code=)16.2.0(?=.?.?&) 1 307
 
 [MITM]
 hostname = %INSERT% *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com
