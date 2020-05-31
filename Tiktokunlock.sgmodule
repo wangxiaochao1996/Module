@@ -1,6 +1,6 @@
 #!name=TikTok
 #!desc=解除 TikTok 区域限制，抖音无国界。
-#!system=ios(升级后改版本号即可）
+#!system=ios
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) US 307
