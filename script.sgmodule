@@ -5,7 +5,7 @@
 
 [MITM]
 
-hostname = %APPEND% api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-api.faceu.com, pay.wecut.com, api.rr.tv, app.xunjiepdf.com, api.app.z8dns.com 
+hostname = %APPEND% api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com, api.rr.tv, app.xunjiepdf.com, api.app.z8dns.com 
 
 
 
@@ -40,7 +40,7 @@ llyd.js = requires-body=1,max-size=0,script-path=https://github.com/nzw9314/Quan
 #我追电影
 wzdy.js = requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/wzdy.js,script-update-interval=0,pattern=^https?:\/\/api-gw\.zhuidianying\.com(\/user\/property\/info|\/user\/detail\/info|\/item\/search\/movie\/info),type=http-response
 #轻颜相机
-qyxj.js = type=http-response,requires-body=1,max-size=0,pattern=https://(commerce-api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info),script-path=https://github.com/wangxiaochao1996/Alex0510/raw/master/Script/qyxj.js,script-update-interval=0
+qyxj.js = type=http-response,requires-body=1,max-size=0,pattern= https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info),script-path= https://github.com/wangxiaochao1996/JS/raw/master/qyxj.js,script-update-interval=0
 #人人视频
 rrtv.js = type=http-response,requires-body=1,max-size=0,pattern=https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail),script-path=https://github.com/wangxiaochao1996/Alex0510/raw/master/Script/rrtv.js,script-update-interval=0
 #语音翻译器
