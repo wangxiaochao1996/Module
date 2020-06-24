@@ -5,12 +5,14 @@
 
 [MITM]
 
-hostname = %APPEND% api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com, api.rr.tv, app.xunjiepdf.com, api.app.z8dns.com 
+hostname = %APPEND% api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com, api.rr.tv, app.xunjiepdf.com, api.app.z8dns.com, mp.bybutter.com 
 
 
 
 [Script]
 
+#Nichi解锁
+NiChi.js = requires-body=1,script-path=https://github.com/wangxiaochao1996/JS/raw/master/Nichi.js,type=http-response,pattern=^https?:\/\/mp\.bybutter\.com\/mood\/(official-templates|privileges)
 #同桌游戏（头号玩家）
 tzyxthwj.js = type=http-response,pattern=https\:\/\/api\.app\.z8dns\.com\/(normal_match\/left_count|vip\/status),requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/tzyxthwj.js,script-update-interval=0
 # 第一弹
