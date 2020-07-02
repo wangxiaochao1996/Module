@@ -1,0 +1,9 @@
+#!name=内购恢复
+#!desc=各种软件内购恢复
+[MITM]
+
+hostname = %APPEND% buy.itunes.apple.com
+
+[Script]
+
+内购 = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/ngReceipt.js,script-update-interval=0
