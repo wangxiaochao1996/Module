@@ -5,7 +5,7 @@
 
 [MITM]
 
-hostname = %APPEND% api.diyidan.net, api.mvmtv.com, pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com, api.rr.tv, app.xunjiepdf.com, api.app.z8dns.com, mobile-api.adguard.com, vip1.kuwo.cn, secure.istreamer.com 
+hostname = %APPEND% pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, license.pdfexpert.com, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com, api.rr.tv, app.xunjiepdf.com, api.app.z8dns.com, mobile-api.adguard.com, vip1.kuwo.cn, secure.istreamer.com 
 
 
 
@@ -22,16 +22,15 @@ http-request ^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+ script-path=http
 #酷我换肤
 
 themekuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/themekuwo.js,type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme)
+#Scanner Pro
+Scannerpro.js = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/2\.0\/scanner\/subscription\/refresh,requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/ScannerPro.js,script-update-interval=0
 
 #Adguard
 Adguard.js = type=http-response,pattern= https://mobile-api.adguard.com/api/1.0/ios_validate_receipt,requires-body=1,max-size=0,script-path= https://github.com/wangxiaochao1996/JS/raw/master/Adguard.js,script-update-interval=0
 
 #同桌游戏（头号玩家）
 tzyxthwj.js = type=http-response,pattern=https\:\/\/api\.app\.z8dns\.com\/(normal_match\/left_count|vip\/status),requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/tzyxthwj.js,script-update-interval=0
-# 第一弹
-Diyidan.js = type=http-response,pattern=^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne),requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/diyidan.js,script-update-interval=0
-# 大千视界
-dqsj.js = requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/dqsj.js,pattern=^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*),type=http-response
+
 # 百度网盘
 BaiduCloud.js = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
 # 知音漫客
