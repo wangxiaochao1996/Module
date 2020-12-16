@@ -5,7 +5,7 @@
 
 [MITM]
 
-hostname = %APPEND% pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.dobenge.cn, license.pdfexpert.com, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com, api.rr.tv, app.xunjiepdf.com, api.app.z8dns.com, mobile-api.adguard.com, vip1.kuwo.cn, secure.istreamer.com 
+hostname = %APPEND% pan.baidu.com, getuserinfo-globalapi.zymk.cn, *.xmind.*, vsco.co, api1.dobenge.cn, license.pdfexpert.com, account.wps.cn, ap*.intsig.net, newdrugs.dxy.cn, api.maimemo.com, ssl-api.itranslateapp.com, vira.llsapp.com, api-gw.zhuidianying.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com, api.rr.tv, app.xunjiepdf.com, api.app.z8dns.com, mobile-api.adguard.com, vip1.kuwo.cn, secure.istreamer.com 
 
 
 
@@ -14,6 +14,9 @@ hostname = %APPEND% pan.baidu.com, getuserinfo-globalapi.zymk.cn, vsco.co, api1.
 #Playerxtreme
 
 http-response ^https:\/\/secure\.istreamer\.com\/backend2 requires-body=1,max-size=0,script-path= https://github.com/wangxiaochao1996/JS/raw/master/Playerxtreme.js,script-update-interval=0
+
+#Xmind
+Xmind.js = type=http-response,pattern=https?:\/\/.*\.xmind\..*\/_res\/devices,requires-body=1,max-size=0,script-path=https://github.com/wangxiaochao1996/JS/raw/master/Xmind.js,script-update-interval=0
 
 #酷我音乐
 
