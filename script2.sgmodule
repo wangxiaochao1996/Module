@@ -1,0 +1,22 @@
+#!name=Script
+#!desc=JS Commonly used
+
+
+
+[MITM]
+
+hostname = %APPEND% mobile-api.adguard.com, pan.baidu.com, api1.dobenge.cn, account.wps.cn, ap*.intsig.net,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com, api.gotokeep.com
+[Script]
+#Adguard
+Adguard.js = type=http-response,pattern= https://mobile-api.adguard.com/api/1.0/ios_validate_receipt,requires-body=1,max-size=0,script-path= https://github.com/wangxiaochao1996/JS/raw/master/Adguard.js,script-update-interval=0
+# 百度网盘
+BaiduCloud.js = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
+# 水印精灵
+syjl.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/syjl.js,pattern=https:\/\/api1\.dobenge\.cn\/api\/user\/getuserinfo,type=http-response
+# wps
+Wps.js = requires-body=1,max-size=-1,script-path=https://github.com/NobyDa/Script/raw/master/Surge/JS/Wps.js,script-update-interval=0,pattern=^https?:\/\/account\.wps\.cn\/api\/users,type=http-response
+# 扫描全能王
+CamScanner.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,type=http-response
+#轻颜相机
+qyxj.js = type=http-response,requires-body=1,max-size=0,pattern= https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info),script-path= https://github.com/wangxiaochao1996/JS/raw/master/qyxj.js,script-update-interval=0
+# keep.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/keep_new.js,pattern=https://api.gotokeep.com/(.+/subject|.+/dynamic|.+/coursePlus/.+|.+/status|.+/tab|.+/my|.+/start|.+/join|.+/complete|.+/detail/.+|.+/preview|.+/auth|.+/tab|.+/days),type=http-response
