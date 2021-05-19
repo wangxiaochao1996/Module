@@ -39,7 +39,6 @@ crazyJoy挂机 = type=cron,cronexp="10 1,12 * * *",wake-system=1,timeout=20,scri
 京喜农场 = type=cron,cronexp="0 9,12,18 * * *",timeout=3600,script-path=https://github.com/wangxiaochao1996/jd-lxk0301/raw/master/jd_jxnc.js
 京东快递签到 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=https://github.com/wangxiaochao1996/jd-lxk0301/raw/master/jd_kd.js
 京东直播 = type=cron,cronexp="10-20/5 12 * * *",wake-system=1,timeout=3600,script-path=https://github.com/wangxiaochao1996/jd-lxk0301/raw/master/jd_live.js
-超级直播间红包雨 = type=cron,cronexp="0,30,31 20-23/1 * * *",wake-system=1,timeout=3600,script-path=https://github.com/wangxiaochao1996/jd-lxk0301/raw/master/jd_live_redrain.js
 幸运大转盘 = type=cron,cronexp="4 10 * * *",wake-system=1,timeout=3600,script-path=https://github.com/wangxiaochao1996/jd-lxk0301/raw/master/jd_market_lottery.js
 京东摇钱树 = type=cron,cronexp="3 0-23/2 * * *",wake-system=1,timeout=3600,script-path=https://github.com/wangxiaochao1996/jd-lxk0301/raw/master/jd_moneyTree.js
 东东萌宠 = type=cron,cronexp="15 6-18/6 * * *",wake-system=1,timeout=3600,script-path=https://github.com/wangxiaochao1996/jd-lxk0301/raw/master/jd_pet.js
